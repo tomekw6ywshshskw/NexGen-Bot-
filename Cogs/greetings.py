@@ -1,5 +1,5 @@
-
 from discord.ext import commands
+import discord
 
 class Greetings(commands.Cog):
     def __init__(self, bot):
@@ -19,3 +19,4 @@ class Greetings(commands.Cog):
 
 def setup(bot):
     bot.add_cog(Greetings(bot))
+    

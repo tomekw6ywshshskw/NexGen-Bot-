@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Użytkownik: {{ user['user_id'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Użytkownik: {{ user['user_id'] }}</h1>
+    <p>ID: {{ user['id'] }}</p>
+    <p>XP: {{ user['xp'] }}</p>
+    <p>Saldo: {{ user['balance'] }}</p>
+    <a href="{{ url_for('edit_user', id=user['id']) }}">Edytuj użytkownika</a>
+    <a href="{{ url_for('users') }}">Powrót do listy użytkowników</a>
+</body>
+</html>

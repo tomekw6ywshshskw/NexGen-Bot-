@@ -8,8 +8,8 @@ class AutoRole(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member):
         role = discord.utils.get(member.guild.roles, name="Nowicjusz")
-        await member.add_roles(role)
+        if role:
+            await member.add_roles(role)
 
 def setup(bot):
     bot.add_cog(AutoRole(bot))
-  

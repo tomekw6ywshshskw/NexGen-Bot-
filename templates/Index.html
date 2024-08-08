@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel zarządzania botem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Witaj w panelu zarządzania botem!</h1>
+    <nav>
+        <a href="{{ url_for('users') }}">Lista użytkowników</a>
+    </nav>
+</body>
+</html>
